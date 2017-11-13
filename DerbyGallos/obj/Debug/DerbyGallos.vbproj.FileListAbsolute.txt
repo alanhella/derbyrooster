@@ -1,0 +1,20 @@
+C:\Users\Vicente\AppData\Local\Temporary Projects\DerbyGallos\bin\Debug\DerbyGallos.exe.config
+C:\Users\Vicente\AppData\Local\Temporary Projects\DerbyGallos\bin\Debug\DerbyGallos.exe
+C:\Users\Vicente\AppData\Local\Temporary Projects\DerbyGallos\bin\Debug\DerbyGallos.pdb
+C:\Users\Vicente\AppData\Local\Temporary Projects\DerbyGallos\bin\Debug\DerbyGallos.xml
+C:\Users\Vicente\AppData\Local\Temporary Projects\DerbyGallos\obj\Debug\DerbyGallos.Resources.resources
+C:\Users\Vicente\AppData\Local\Temporary Projects\DerbyGallos\obj\Debug\DerbyGallos.vbproj.GenerateResource.Cache
+C:\Users\Vicente\AppData\Local\Temporary Projects\DerbyGallos\obj\Debug\DerbyGallos.exe
+C:\Users\Vicente\AppData\Local\Temporary Projects\DerbyGallos\obj\Debug\DerbyGallos.xml
+C:\Users\Vicente\AppData\Local\Temporary Projects\DerbyGallos\obj\Debug\DerbyGallos.pdb
+C:\Users\Vicente\AppData\Local\Temporary Projects\DerbyGallos\obj\Debug\DerbyGallos.Menu_Principal.resources
+C:\Users\Vicente\Documents\Visual Studio 2012\Projects\DerbyGallos\DerbyGallos\bin\Debug\DerbyGallos.exe.config
+C:\Users\Vicente\Documents\Visual Studio 2012\Projects\DerbyGallos\DerbyGallos\obj\Debug\DerbyGallos.exe
+C:\Users\Vicente\Documents\Visual Studio 2012\Projects\DerbyGallos\DerbyGallos\obj\Debug\DerbyGallos.xml
+C:\Users\Vicente\Documents\Visual Studio 2012\Projects\DerbyGallos\DerbyGallos\obj\Debug\DerbyGallos.pdb
+C:\Users\Vicente\Documents\Visual Studio 2012\Projects\DerbyGallos\DerbyGallos\obj\Debug\DerbyGallos.Menu.resources
+C:\Users\Vicente\Documents\Visual Studio 2012\Projects\DerbyGallos\DerbyGallos\obj\Debug\DerbyGallos.Resources.resources
+C:\Users\Vicente\Documents\Visual Studio 2012\Projects\DerbyGallos\DerbyGallos\obj\Debug\DerbyGallos.vbproj.GenerateResource.Cache
+C:\Users\Vicente\Documents\Visual Studio 2012\Projects\DerbyGallos\DerbyGallos\bin\Debug\DerbyGallos.exe
+C:\Users\Vicente\Documents\Visual Studio 2012\Projects\DerbyGallos\DerbyGallos\bin\Debug\DerbyGallos.pdb
+C:\Users\Vicente\Documents\Visual Studio 2012\Projects\DerbyGallos\DerbyGallos\bin\Debug\DerbyGallos.xml
