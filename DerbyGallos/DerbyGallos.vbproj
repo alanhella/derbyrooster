@@ -45,7 +45,14 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\rooster.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MyEncrypt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\referencias\MyEncrypt.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -71,11 +78,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.vb" />
-    <Compile Include="Menu Derby.vb">
+    <Compile Include="Entidades\SorteoClass.vb" />
+    <Compile Include="Formularios\ConfiguracionPlazaForm.Designer.vb">
+      <DependentUpon>ConfiguracionPlazaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConfiguracionPlazaForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu Derby.Designer.vb">
-      <DependentUpon>Menu Derby.vb</DependentUpon>
+    <Compile Include="Formularios\Configuracion.Designer.vb">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Configuracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entidades\ConfiguracionConexion.vb" />
+    <Compile Include="Entidades\ConfiguracionPlaza.vb" />
+    <Compile Include="Constantes\Mensajes.vb" />
+    <Compile Include="Constantes\Parametros.vb" />
+    <Compile Include="Constantes\StoredProcedures.vb" />
+    <Compile Include="Formularios\MenuDerby.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MenuDerby.Designer.vb">
+      <DependentUpon>MenuDerby.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -93,11 +118,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Partido.vb" />
+    <Compile Include="Entidades\Partido.vb" />
+    <Compile Include="RegistroWindows.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Menu Derby.resx">
-      <DependentUpon>Menu Derby.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\ConfiguracionPlazaForm.resx">
+      <DependentUpon>ConfiguracionPlazaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Configuracion.resx">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MenuDerby.resx">
+      <DependentUpon>MenuDerby.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -120,6 +152,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icono gallo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rooster.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
