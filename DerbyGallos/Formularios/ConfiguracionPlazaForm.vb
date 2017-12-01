@@ -26,6 +26,8 @@ Public Class ConfiguracionPlazaForm
 
         Me.TextBoxDescripcion.DataBindings.Add(New Binding("Text", _configuracion, "Descripcion"))
         Me.TextBoxNumeroGallos.DataBindings.Add(New Binding("Text", _configuracion, "NumeroGallos"))
+        Me.TextBoxDiferenciaPeso.DataBindings.Add(New Binding("Text", _configuracion, "DiferenciaMaxima"))
+        Me.TextBoxNombrePalenque.DataBindings.Add(New Binding("Text", _configuracion, "PalenqueDescripcion"))
 
     End Sub
 
@@ -35,6 +37,7 @@ Public Class ConfiguracionPlazaForm
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
+        Me.SelectNextControl(Me.ActiveControl, True, False, True, True)
         _registro = New RegistroWindows
         _registro.ConfiguracionPlazaUpdate(_configuracion)
         MessageBox.Show(Me, "Configuración guardada con éxito.", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information)

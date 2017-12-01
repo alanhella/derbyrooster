@@ -8,10 +8,15 @@
     Private _anillo As Integer
     Private _ronda As Integer
 
+    'Datos de resultados de pelea
     Private _gana As Boolean
     Private _pierde As Boolean
     Private _tablas As Boolean
+    Private _fecha As DateTime
 
+    'Datos de sorteo
+    Private _pelea As Integer
+    Private _diferencia As Integer
 
     Public Property Id() As Integer
         Get
@@ -80,8 +85,6 @@
         End Get
         Set(value As Boolean)
             _gana = value
-            _pierde = Not value
-            _tablas = Not value
         End Set
     End Property
 
@@ -91,8 +94,6 @@
         End Get
         Set(value As Boolean)
             _pierde = value
-            _gana = Not value
-            _tablas = Not value
         End Set
     End Property
 
@@ -102,8 +103,33 @@
         End Get
         Set(value As Boolean)
             _tablas = value
-            _gana = Not value
-            _pierde = Not value
+        End Set
+    End Property
+
+    Public Property Pelea As Integer
+        Get
+            Return _pelea
+        End Get
+        Set(value As Integer)
+            _pelea = value
+        End Set
+    End Property
+
+    Public Property Diferencia As Integer
+        Get
+            Return _diferencia
+        End Get
+        Set(value As Integer)
+            _diferencia = value
+        End Set
+    End Property
+
+    Public Property Fecha As Date
+        Get
+            Return _fecha
+        End Get
+        Set(value As Date)
+            _fecha = value
         End Set
     End Property
 End Class

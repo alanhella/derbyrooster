@@ -23,11 +23,11 @@ Partial Class Menu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu))
-        Me.label10 = New System.Windows.Forms.Label()
-        Me.label9 = New System.Windows.Forms.Label()
-        Me.label8 = New System.Windows.Forms.Label()
-        Me.label7 = New System.Windows.Forms.Label()
-        Me.dataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.LabelPeleas = New System.Windows.Forms.Label()
+        Me.LabelGallos = New System.Windows.Forms.Label()
+        Me.LabelPartidos = New System.Windows.Forms.Label()
+        Me.labelPalenqueDescripcion = New System.Windows.Forms.Label()
+        Me.DGVSorteo = New System.Windows.Forms.DataGridView()
         Me.GRIDALTA = New System.Windows.Forms.DataGridView()
         Me.BtnGuardaPelas = New System.Windows.Forms.Button()
         Me.btnImprime = New System.Windows.Forms.Button()
@@ -74,60 +74,64 @@ Partial Class Menu
         Me.ConexionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AplicacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.dataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ButtonCambiaPartidos = New System.Windows.Forms.Button()
+        CType(Me.DGVSorteo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GRIDALTA, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.menuStrip1.SuspendLayout()
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'label10
+        'LabelPeleas
         '
-        Me.label10.AutoSize = True
-        Me.label10.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label10.Location = New System.Drawing.Point(398, 537)
-        Me.label10.Name = "label10"
-        Me.label10.Size = New System.Drawing.Size(82, 24)
-        Me.label10.TabIndex = 58
-        Me.label10.Text = "Peleas"
+        Me.LabelPeleas.AutoSize = True
+        Me.LabelPeleas.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelPeleas.Location = New System.Drawing.Point(398, 537)
+        Me.LabelPeleas.Name = "LabelPeleas"
+        Me.LabelPeleas.Size = New System.Drawing.Size(82, 24)
+        Me.LabelPeleas.TabIndex = 58
+        Me.LabelPeleas.Text = "Peleas"
         '
-        'label9
+        'LabelGallos
         '
-        Me.label9.AutoSize = True
-        Me.label9.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label9.Location = New System.Drawing.Point(199, 537)
-        Me.label9.Name = "label9"
-        Me.label9.Size = New System.Drawing.Size(82, 24)
-        Me.label9.TabIndex = 57
-        Me.label9.Text = "Gallos"
+        Me.LabelGallos.AutoSize = True
+        Me.LabelGallos.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelGallos.Location = New System.Drawing.Point(199, 537)
+        Me.LabelGallos.Name = "LabelGallos"
+        Me.LabelGallos.Size = New System.Drawing.Size(82, 24)
+        Me.LabelGallos.TabIndex = 57
+        Me.LabelGallos.Text = "Gallos"
         '
-        'label8
+        'LabelPartidos
         '
-        Me.label8.AutoSize = True
-        Me.label8.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label8.Location = New System.Drawing.Point(10, 537)
-        Me.label8.Name = "label8"
-        Me.label8.Size = New System.Drawing.Size(106, 24)
-        Me.label8.TabIndex = 56
-        Me.label8.Text = "Partidos"
+        Me.LabelPartidos.AutoSize = True
+        Me.LabelPartidos.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelPartidos.Location = New System.Drawing.Point(10, 537)
+        Me.LabelPartidos.Name = "LabelPartidos"
+        Me.LabelPartidos.Size = New System.Drawing.Size(106, 24)
+        Me.LabelPartidos.TabIndex = 56
+        Me.LabelPartidos.Text = "Partidos"
         '
-        'label7
+        'labelPalenqueDescripcion
         '
-        Me.label7.AutoSize = True
-        Me.label7.Font = New System.Drawing.Font("Consolas", 21.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label7.Location = New System.Drawing.Point(797, 16)
-        Me.label7.Name = "label7"
-        Me.label7.Size = New System.Drawing.Size(335, 34)
-        Me.label7.TabIndex = 54
-        Me.label7.Text = "Palenque Dos Estados"
+        Me.labelPalenqueDescripcion.AutoSize = True
+        Me.labelPalenqueDescripcion.Font = New System.Drawing.Font("Consolas", 21.75!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelPalenqueDescripcion.Location = New System.Drawing.Point(797, 16)
+        Me.labelPalenqueDescripcion.Name = "labelPalenqueDescripcion"
+        Me.labelPalenqueDescripcion.Size = New System.Drawing.Size(335, 34)
+        Me.labelPalenqueDescripcion.TabIndex = 54
+        Me.labelPalenqueDescripcion.Text = "Palenque Dos Estados"
         '
-        'dataGridView2
+        'DGVSorteo
         '
-        Me.dataGridView2.BackgroundColor = System.Drawing.Color.White
-        Me.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dataGridView2.Location = New System.Drawing.Point(588, 134)
-        Me.dataGridView2.Name = "dataGridView2"
-        Me.dataGridView2.Size = New System.Drawing.Size(550, 383)
-        Me.dataGridView2.TabIndex = 22
+        Me.DGVSorteo.AllowUserToAddRows = False
+        Me.DGVSorteo.AllowUserToDeleteRows = False
+        Me.DGVSorteo.BackgroundColor = System.Drawing.Color.White
+        Me.DGVSorteo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVSorteo.Location = New System.Drawing.Point(588, 134)
+        Me.DGVSorteo.Name = "DGVSorteo"
+        Me.DGVSorteo.ReadOnly = True
+        Me.DGVSorteo.Size = New System.Drawing.Size(550, 383)
+        Me.DGVSorteo.TabIndex = 22
         '
         'GRIDALTA
         '
@@ -474,14 +478,14 @@ Partial Class Menu
         Me.ConexionToolStripMenuItem.Name = "ConexionToolStripMenuItem"
         Me.ConexionToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.F11), System.Windows.Forms.Keys)
-        Me.ConexionToolStripMenuItem.Size = New System.Drawing.Size(208, 22)
+        Me.ConexionToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
         Me.ConexionToolStripMenuItem.Text = "Conexión"
         Me.ConexionToolStripMenuItem.Visible = False
         '
         'AplicacionToolStripMenuItem
         '
         Me.AplicacionToolStripMenuItem.Name = "AplicacionToolStripMenuItem"
-        Me.AplicacionToolStripMenuItem.Size = New System.Drawing.Size(208, 22)
+        Me.AplicacionToolStripMenuItem.Size = New System.Drawing.Size(222, 22)
         Me.AplicacionToolStripMenuItem.Text = "Aplicación"
         '
         'pictureBox1
@@ -494,18 +498,30 @@ Partial Class Menu
         Me.pictureBox1.TabIndex = 55
         Me.pictureBox1.TabStop = False
         '
+        'ButtonCambiaPartidos
+        '
+        Me.ButtonCambiaPartidos.BackColor = System.Drawing.Color.White
+        Me.ButtonCambiaPartidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonCambiaPartidos.Location = New System.Drawing.Point(1042, 523)
+        Me.ButtonCambiaPartidos.Name = "ButtonCambiaPartidos"
+        Me.ButtonCambiaPartidos.Size = New System.Drawing.Size(96, 26)
+        Me.ButtonCambiaPartidos.TabIndex = 59
+        Me.ButtonCambiaPartidos.Text = "Cambia Partidos"
+        Me.ButtonCambiaPartidos.UseVisualStyleBackColor = False
+        '
         'Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1166, 580)
-        Me.Controls.Add(Me.label10)
-        Me.Controls.Add(Me.label9)
-        Me.Controls.Add(Me.label8)
+        Me.Controls.Add(Me.ButtonCambiaPartidos)
+        Me.Controls.Add(Me.LabelPeleas)
+        Me.Controls.Add(Me.LabelGallos)
+        Me.Controls.Add(Me.LabelPartidos)
         Me.Controls.Add(Me.pictureBox1)
-        Me.Controls.Add(Me.label7)
-        Me.Controls.Add(Me.dataGridView2)
+        Me.Controls.Add(Me.labelPalenqueDescripcion)
+        Me.Controls.Add(Me.DGVSorteo)
         Me.Controls.Add(Me.GRIDALTA)
         Me.Controls.Add(Me.BtnGuardaPelas)
         Me.Controls.Add(Me.btnImprime)
@@ -535,7 +551,7 @@ Partial Class Menu
         Me.Name = "Menu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Derby Gallos"
-        CType(Me.dataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGVSorteo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GRIDALTA, System.ComponentModel.ISupportInitialize).EndInit()
         Me.menuStrip1.ResumeLayout(False)
         Me.menuStrip1.PerformLayout()
@@ -544,12 +560,12 @@ Partial Class Menu
         Me.PerformLayout()
 
     End Sub
-    Private WithEvents label10 As System.Windows.Forms.Label
-    Private WithEvents label9 As System.Windows.Forms.Label
-    Private WithEvents label8 As System.Windows.Forms.Label
+    Private WithEvents LabelPeleas As System.Windows.Forms.Label
+    Private WithEvents LabelGallos As System.Windows.Forms.Label
+    Private WithEvents LabelPartidos As System.Windows.Forms.Label
     Private WithEvents pictureBox1 As System.Windows.Forms.PictureBox
-    Private WithEvents label7 As System.Windows.Forms.Label
-    Private WithEvents dataGridView2 As System.Windows.Forms.DataGridView
+    Private WithEvents labelPalenqueDescripcion As System.Windows.Forms.Label
+    Private WithEvents DGVSorteo As System.Windows.Forms.DataGridView
     Private WithEvents GRIDALTA As System.Windows.Forms.DataGridView
     Private WithEvents BtnGuardaPelas As System.Windows.Forms.Button
     Private WithEvents btnImprime As System.Windows.Forms.Button
@@ -595,4 +611,5 @@ Partial Class Menu
     Friend WithEvents ConfiguraciónToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConexionToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AplicacionToolStripMenuItem As ToolStripMenuItem
+    Private WithEvents ButtonCambiaPartidos As Button
 End Class

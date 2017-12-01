@@ -5,6 +5,8 @@
     Private _user As String
     Private _password As String
 
+    Private _rutaReportes As String
+
     Public Property DataSource As String
         Get
             Return _dataSource
@@ -38,6 +40,15 @@
         End Get
         Set(value As String)
             _password = value
+        End Set
+    End Property
+
+    Public Property RutaReportes As String
+        Get
+            Return _rutaReportes
+        End Get
+        Set(value As String)
+            _rutaReportes = value
         End Set
     End Property
 

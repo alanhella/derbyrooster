@@ -32,20 +32,22 @@ Partial Class ConfiguracionPlazaForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBoxNombrePalenque = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LabelDiferenciaPeso = New System.Windows.Forms.Label()
+        Me.TextBoxDiferenciaPeso = New System.Windows.Forms.TextBox()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBoxDescripcion
         '
-        Me.TextBoxDescripcion.Location = New System.Drawing.Point(254, 77)
+        Me.TextBoxDescripcion.Location = New System.Drawing.Point(254, 69)
         Me.TextBoxDescripcion.Name = "TextBoxDescripcion"
         Me.TextBoxDescripcion.Size = New System.Drawing.Size(164, 22)
         Me.TextBoxDescripcion.TabIndex = 0
         '
         'TextBoxNumeroGallos
         '
-        Me.TextBoxNumeroGallos.Location = New System.Drawing.Point(254, 103)
+        Me.TextBoxNumeroGallos.Location = New System.Drawing.Point(254, 95)
         Me.TextBoxNumeroGallos.Name = "TextBoxNumeroGallos"
         Me.TextBoxNumeroGallos.Size = New System.Drawing.Size(164, 22)
         Me.TextBoxNumeroGallos.TabIndex = 1
@@ -53,7 +55,7 @@ Partial Class ConfiguracionPlazaForm
         'LabelServidor
         '
         Me.LabelServidor.AutoSize = True
-        Me.LabelServidor.Location = New System.Drawing.Point(140, 80)
+        Me.LabelServidor.Location = New System.Drawing.Point(140, 72)
         Me.LabelServidor.Name = "LabelServidor"
         Me.LabelServidor.Size = New System.Drawing.Size(108, 13)
         Me.LabelServidor.TabIndex = 2
@@ -62,7 +64,7 @@ Partial Class ConfiguracionPlazaForm
         'LabelBaseDatos
         '
         Me.LabelBaseDatos.AutoSize = True
-        Me.LabelBaseDatos.Location = New System.Drawing.Point(146, 106)
+        Me.LabelBaseDatos.Location = New System.Drawing.Point(146, 98)
         Me.LabelBaseDatos.Name = "LabelBaseDatos"
         Me.LabelBaseDatos.Size = New System.Drawing.Size(102, 13)
         Me.LabelBaseDatos.TabIndex = 3
@@ -89,7 +91,7 @@ Partial Class ConfiguracionPlazaForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(127, 52)
+        Me.Label1.Location = New System.Drawing.Point(127, 44)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(121, 13)
         Me.Label1.TabIndex = 11
@@ -97,24 +99,42 @@ Partial Class ConfiguracionPlazaForm
         '
         'TextBoxNombrePalenque
         '
-        Me.TextBoxNombrePalenque.Location = New System.Drawing.Point(254, 49)
+        Me.TextBoxNombrePalenque.Location = New System.Drawing.Point(254, 41)
         Me.TextBoxNombrePalenque.Name = "TextBoxNombrePalenque"
         Me.TextBoxNombrePalenque.Size = New System.Drawing.Size(164, 22)
         Me.TextBoxNombrePalenque.TabIndex = 10
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(21, 37)
+        Me.PictureBox1.Location = New System.Drawing.Point(21, 40)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
         Me.PictureBox1.TabIndex = 12
         Me.PictureBox1.TabStop = False
         '
+        'LabelDiferenciaPeso
+        '
+        Me.LabelDiferenciaPeso.AutoSize = True
+        Me.LabelDiferenciaPeso.Location = New System.Drawing.Point(142, 126)
+        Me.LabelDiferenciaPeso.Name = "LabelDiferenciaPeso"
+        Me.LabelDiferenciaPeso.Size = New System.Drawing.Size(106, 13)
+        Me.LabelDiferenciaPeso.TabIndex = 14
+        Me.LabelDiferenciaPeso.Text = "Diferencia de peso:"
+        '
+        'TextBoxDiferenciaPeso
+        '
+        Me.TextBoxDiferenciaPeso.Location = New System.Drawing.Point(254, 123)
+        Me.TextBoxDiferenciaPeso.Name = "TextBoxDiferenciaPeso"
+        Me.TextBoxDiferenciaPeso.Size = New System.Drawing.Size(164, 22)
+        Me.TextBoxDiferenciaPeso.TabIndex = 13
+        '
         'ConfiguracionPlazaForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(438, 159)
+        Me.ClientSize = New System.Drawing.Size(438, 174)
+        Me.Controls.Add(Me.LabelDiferenciaPeso)
+        Me.Controls.Add(Me.TextBoxDiferenciaPeso)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBoxNombrePalenque)
@@ -148,4 +168,6 @@ Partial Class ConfiguracionPlazaForm
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBoxNombrePalenque As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents LabelDiferenciaPeso As Label
+    Friend WithEvents TextBoxDiferenciaPeso As TextBox
 End Class

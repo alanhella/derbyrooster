@@ -10,8 +10,12 @@ Public Class RegistroWindows
     Private Const registry_sub_key_user As String = "derby_user"
     Private Const registry_sub_key_password As String = "derby_password"
 
+    Private Const registry_sub_ruta_reportes As String = "ruta_reportes"
+
     Private Const registry_sub_key_plaza_descripcion As String = "plaza_descripcion"
     Private Const registry_sub_key_numero_gallos As String = "numero_gallos"
+    Private Const registry_sub_key_palenque_descripcion As String = "palenque_descripcion"
+    Private Const registry_sub_key_diferencia_peso As String = "diferencia_peso"
 
     Private Const _key As String = "a83dfbb3-fde3-40e9-8dda-74327ba9aa1f"
 
@@ -46,6 +50,8 @@ Public Class RegistroWindows
         My.Computer.Registry.SetValue(registry_key_principal, registry_sub_key_user, configuracion.User)
         My.Computer.Registry.SetValue(registry_key_principal, registry_sub_key_password, passwordEncrypt)
 
+        My.Computer.Registry.SetValue(registry_key_principal, registry_sub_ruta_reportes, configuracion.RutaReportes)
+
     End Sub
 
     ''' <summary>
@@ -58,6 +64,8 @@ Public Class RegistroWindows
 
         My.Computer.Registry.SetValue(registry_key_principal, registry_sub_key_plaza_descripcion, configuracion.Descripcion)
         My.Computer.Registry.SetValue(registry_key_principal, registry_sub_key_numero_gallos, configuracion.NumeroGallos)
+        My.Computer.Registry.SetValue(registry_key_principal, registry_sub_key_diferencia_peso, configuracion.DiferenciaMaxima)
+        My.Computer.Registry.SetValue(registry_key_principal, registry_sub_key_palenque_descripcion, configuracion.PalenqueDescripcion)
 
     End Sub
 
@@ -96,6 +104,12 @@ Public Class RegistroWindows
             config.Password = passwordDesencriptado
         End If
 
+        If My.Computer.Registry.GetValue(registry_key_principal, registry_sub_ruta_reportes, Nothing) Is Nothing Then
+            config.RutaReportes = String.Empty
+        Else
+            config.RutaReportes = My.Computer.Registry.GetValue(registry_key_principal, registry_sub_ruta_reportes, Nothing).ToString
+        End If
+
         Return config
 
     End Function
@@ -107,19 +121,32 @@ Public Class RegistroWindows
     Public Function ConfiguracionPlazaGet() As ConfiguracionPlaza
         Dim config As New ConfiguracionPlaza
 
-        If My.Computer.Registry.GetValue(registry_key_principal, registry_sub_key_datasourse, Nothing) Is Nothing Then
+        If My.Computer.Registry.GetValue(registry_key_principal, registry_sub_key_plaza_descripcion, Nothing) Is Nothing Then
             config.Descripcion = String.Empty
         Else
             config.Descripcion = My.Computer.Registry.GetValue(registry_key_principal, registry_sub_key_plaza_descripcion, Nothing).ToString
         End If
 
-        If My.Computer.Registry.GetValue(registry_key_principal, registry_sub_key_datasourse, Nothing) Is Nothing Then
-            config.NumeroGallos = 0
+        If My.Computer.Registry.GetValue(registry_key_principal, registry_sub_key_numero_gallos, Nothing) Is Nothing Then
+            config.NumeroGallos = 1
         Else
             config.NumeroGallos = CInt(My.Computer.Registry.GetValue(registry_key_principal, registry_sub_key_numero_gallos, Nothing).ToString)
         End If
 
+        If My.Computer.Registry.GetValue(registry_key_principal, registry_sub_key_palenque_descripcion, Nothing) Is Nothing Then
+            config.PalenqueDescripcion = String.Empty
+        Else
+            config.PalenqueDescripcion = My.Computer.Registry.GetValue(registry_key_principal, registry_sub_key_palenque_descripcion, Nothing).ToString
+        End If
+
+        If My.Computer.Registry.GetValue(registry_key_principal, registry_sub_key_diferencia_peso, Nothing) Is Nothing Then
+            config.DiferenciaMaxima = 80
+        Else
+            config.DiferenciaMaxima = CInt(My.Computer.Registry.GetValue(registry_key_principal, registry_sub_key_diferencia_peso, Nothing).ToString)
+        End If
+
         Return config
+
     End Function
 
 End Class
